@@ -1,0 +1,148 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background-image: url("../imagens/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 10vh;
+}
+
+.cabecalho {
+  text-align: center;
+  padding: 550px 0;
+}
+
+.cabecalho h1 {
+  color :   rgb(255, 255, 255) ; 
+  background-color: #4d4d4d67;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 0 5px 0 5px;
+  text-transform: uppercase;
+  text-shadow: rgba(255, 3, 3, 0.979) 1px 7px 29px;
+
+}
+
+.personagens-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.lista-personagens {
+  width: 330px;
+  height: 520px;
+  position: relative;
+}
+
+.btn-seta {
+  background-color: #ffffff9f;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 0, 0, 0.37);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+  transform: rotateY(180deg);
+  border: 1px solid rgba(0, 0, 255, 0.37);
+  
+}
+
+.btn-seta:hover {
+  background-color: #ff0000d2;
+}
+
+.btn-seta.btn-voltar:hover {
+  background-color: #0400ffd2;
+}
+.cartao {
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  padding: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  transition: 0.7s ease-out; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+
+.cartao.selecionado {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cartao .imagem-personagem {
+  width: 100%;
+  max-height: 280px;
+  transform: scale(1);
+}
+
+.cartao .nome {
+  background-color: rgb(230, 13, 13);
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.cartao .descricao {
+  background-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.cartao .descricao .titulo {
+  background-color: #0a07c546;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 08px;
+}
+
+.cartao .descricao .texto {
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.cartao.fundo-1 {
+  background: url("../imagens/fundo-1.jpg") no-repeat;
+}
+
+.cartao.fundo-2 {
+  background: url("../imagens/fundo-2.jpg") no-repeat;
+}
+
+.cartao.fundo-3 {
+  background: url("../imagens/fundo-3.jpg") no-repeat;
+}
+
+.cartao.fundo-4 {
+  background: url("../imagens/fundo-4.jpg") no-repeat;
+}
+
+.cartao.fundo-5 {
+  background: url("../imagens/fundo-5.jpg") no-repeat;
+}
+
+.cartao.fundo-6 {
+  background: url("../imagens/fundo-6.jpg") no-repeat;
+}
