@@ -1,4 +1,6 @@
-@media (max-width: 640dvh){
+@media (max-width:640dvh)
+
+{
     .cabecalho{
         margin-top: 5px;
         padding: 15px 0;
@@ -20,13 +22,10 @@
     }
 
     audio {
-        background-color: rgba(0, 0, 0, 0.5);
-        margin-top: 5px;
-        margin: 3px 23px auto ;
-        padding: 1% 7%;
+        background-color: rgba(0, 0, 0, 0.144);
+        margin-top: 15px;
+        margin-left:1cm;
+        padding: 1%;
         border-radius: 70%;
-        scroll-padding-block: initial;
-        display: block;
     }
-    
 }
